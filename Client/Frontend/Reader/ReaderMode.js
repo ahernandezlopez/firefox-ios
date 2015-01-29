@@ -130,7 +130,7 @@ var _firefox_ReaderMode = {
                 if (rule.type === 5 && rule.style && rule.style.src) { // TODO: CSSFontFaceRule == 5 - No symbol for this? Or better check?
                     var matches = rule.style.src.match(/^url\(((?:Charis|FiraSans).*\.ttf)\)$/);
                     if (matches) {
-                        rule.style.src = "url(" + webServerBase + "/" + matches[1] + ")";
+                        rule.style.src = "url(" + webServerBase + "/fonts/" + matches[1] + ")";
                     }
                 }
             }
